@@ -1,20 +1,29 @@
 # Twierdza — autoryzacja serwerów
 
-Lista publicznych adresów IPv4 uprawnionych do korzystania z peleryny Twierdza.
+Lista zezwoleń dla 19 modułów Twierdza: 11 klienckich i 8 serwerowych, w tym bridge reLife. Zatwierdzony publiczny adres wychodzący serwera: **37.28.155.66**.
+
+## Aktualne wydanie
+Wydanie `01OCT-GITHUB-1.0`, build `20261001-175110-603292`, zawiera integrację kodu i przebudowane PBO całego zestawu. SFP, TW_Terytorium, TW_AdminHammer i KulpaNameTags są poza zakresem.
+
+Należy aktualizować cały zestaw razem: TwierdzaAdmin udostępnia wspólne API, a TwierdzaAdmin_Server wykonuje weryfikację. Prywatne PBO serwerowe pozostają wyłącznie w `-serverMod`. Peleryna nadal wymaga lokalnego prywatnego pliku licencji. Nie publikuj PBO serwerowych, źródeł prywatnych, kluczy licencji ani kluczy podpisujących w tym repozytorium.
 
 ## Zmiana zgody
-Otwórz `server-allowlist.json`, kliknij ołówek i edytuj `allowedPublicIPv4`. Zapisz przez Commit changes. Adresy wpisuj jako tekst, oddzielone przecinkami. `enabled: false` wyłącza zgodę dla wszystkich serwerów.
+Edytuj `server-allowlist.json`. Zgoda wymaga głównego `enabled: true`, IP na głównej liście oraz aktywnego wpisu danego modułu z tym IP w `mods`. Pary klient/serwer wymagają obu wpisów; cały zestaw wymaga TwierdzaAdmin i TwierdzaAdmin_Server. Nie zmieniaj identyfikatorów ani schematu. Główne `modId` pozostaje dla zgodności ze starszą peleryną.
 
-Mod serwerowy sprawdza listę co 60 sekund przez HTTPS. Po zmianie może wystąpić dodatkowe opóźnienie cache GitHuba. Publiczny adres wychodzący serwera jest odczytywany przez ipify, a nie z edytowalnego pliku IP. Przy NAT może różnić się od adresu dołączania do gry.
+Serwer odczytuje IP przez HTTPS z ipify i listę z GitHuba co 60 sekund. Cache GitHuba może opóźnić zmianę. Nowy start wymaga poprawnej odpowiedzi; przy awarii połączenia wcześniejsza zgoda wygasa najpóźniej 10 minut od ostatniej poprawnej weryfikacji. Usunięcie IP lub wyłączenie wpisu działa po odebraniu kolejnej poprawnej listy.
 
-Po starcie wymagana jest poprawna odpowiedź obu usług. Przy błędzie połączenia wcześniej uzyskana zgoda pozostaje ważna maksymalnie 10 minut od ostatniej poprawnej weryfikacji. Usunięcie IP z poprawnej listy lub `enabled: false` wyłącza ochronę przy następnym skutecznym sprawdzeniu. Gracze pozostają na serwerze, ale kamuflaż nie działa.
+Brak zgody blokuje funkcje skryptowe Twierdzy i zapisuje informację w logu. Nie zamyka serwera, nie wyrzuca graczy i nie usuwa przedmiotów ani zapisów. Inicjalizacja i odtwarzanie danych pozostają dostępne. TwierdzaRdzen_Server jest adapterem konfiguracji, a jego zgoda jest wymagana przez mechaniki TwierdzaSkills_Rdzen.
 
-## Zakres
-W repozytorium jest tylko publiczna lista IP. Nie umieszczaj tutaj PBO serwerowego, klucza licencji ani kluczy podpisujących.
+## Sprawdzenie
+W logu skryptów serwera szukaj:
+```
+[TW_MOD_LICENSE] ONLINE ACCEPTED: IP 37.28.155.66 modules=19
+```
+Przy obcym IP występuje `ONLINE DENIED` z informacją, że serwer nie jest autoryzowany. Liczy się adres wychodzący widziany przez ipify; NAT/VPN może go zmienić.
 
-To lista zezwoleń, nie rejestr wszystkich serwerów używających moda. GitHub nie wykrywa samodzielnie skopiowanych modów. Zmodyfikowane kopie mogą ominąć kontrolę; starsze wersje bez kontroli online nie są nią objęte.
+Dokładnie wydane 19 PBO przeszło 84 testy z wynikiem PASS, 0 FAIL; World i Mission skompilowały się. Odmowę dla obcego IP sprawdzono przez rzeczywiste HTTPS. Zgodę docelowego IP, cofnięcie zgody i awarie sprawdzono kontrolowanymi odpowiedziami w osobnym dodatku testowym, którego nie ma w wydaniu. Nie wykonano testu na produkcyjnym IP ani wizualnego testu klienta. Środowisko testowe zgłosiło osobny komunikat LBmaster Advanced Groups o braku autoryzowanej części serwerowej; jego licencji nie zmieniano.
 
-## Zakres rejestru — 1 października 2026
-Lista zawiera 19 modułów z `Twierdza` w nazwie (11 klienckich, 8 serwerowych), w tym bridge reLife. SFP, TW_Terytorium, TW_AdminHammer i KulpaNameTags nie są objęte tym zakresem.
+## Kolejne mody i ograniczenia
+Każdy kolejny moduł Twierdza należy dodać do `mods` dla tego IP, zintegrować z kontrolą w kodzie, przebudować i przetestować. Sam wpis na GitHubie nie zabezpiecza PBO.
 
-Pole `mods` jest rejestrem zezwoleń dla obecnych i kolejnych integracji. Samo dopisanie modułu nie modyfikuje jego PBO. Obecnie wydaną i przetestowaną kontrolę online ma peleryna; pozostali konsumenci wymagają integracji kodu i testu przed uznaniem ich za zabezpieczone. Zachowano pola główne dla zgodności z peleryną 1.5.0.
+To lista zezwoleń, nie rejestr wszystkich serwerów używających modów. GitHub nie wykrywa samodzielnie kopii. Kontrola nie uniemożliwia ekstrakcji modeli/tekstur ani nie wyłącza statycznej konfiguracji załadowanej przez klienta. Stare PBO bez kontroli online nie są objęte blokadą, a zmodyfikowane kopie mogą ją ominąć.
