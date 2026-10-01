@@ -13,3 +13,8 @@ Po starcie wymagana jest poprawna odpowiedź obu usług. Przy błędzie połącz
 W repozytorium jest tylko publiczna lista IP. Nie umieszczaj tutaj PBO serwerowego, klucza licencji ani kluczy podpisujących.
 
 To lista zezwoleń, nie rejestr wszystkich serwerów używających moda. GitHub nie wykrywa samodzielnie skopiowanych modów. Zmodyfikowane kopie mogą ominąć kontrolę; starsze wersje bez kontroli online nie są nią objęte.
+
+## Zakres rejestru — 1 października 2026
+Lista zawiera 19 modułów z `Twierdza` w nazwie (11 klienckich, 8 serwerowych), w tym bridge reLife. SFP, TW_Terytorium, TW_AdminHammer i KulpaNameTags nie są objęte tym zakresem.
+
+Pole `mods` jest rejestrem zezwoleń dla obecnych i kolejnych integracji. Samo dopisanie modułu nie modyfikuje jego PBO. Obecnie wydaną i przetestowaną kontrolę online ma peleryna; pozostali konsumenci wymagają integracji kodu i testu przed uznaniem ich za zabezpieczone. Zachowano pola główne dla zgodności z peleryną 1.5.0.
