@@ -138,6 +138,20 @@
       "allowedPublicIPv4": [
         "37.28.155.66"
       ]
+    },
+    {
+      "id": "Twierdza_Dungeony",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Dungeony_Server",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
     }
   ]
 }
