@@ -166,6 +166,13 @@
       "allowedPublicIPv4": [
         "37.28.155.66"
       ]
+    },
+    {
+      "id": "Twierdza_Things",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
     }
   ]
 }
