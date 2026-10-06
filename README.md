@@ -1,6 +1,6 @@
 # Twierdza — autoryzacja serwerów
 
-Lista zezwoleń dla 19 modułów Twierdza: 11 klienckich i 8 serwerowych, w tym bridge reLife. Zatwierdzony publiczny adres wychodzący serwera: **37.28.155.66**.
+Lista zezwoleń dla 25 modułów Twierdza: 14 klienckich i 11 serwerowych, w tym bridge reLife. Zatwierdzony publiczny adres wychodzący serwera: **37.28.155.66**.
 
 ## Aktualne wydanie
 Wydanie `01OCT-GITHUB-1.0`, build `20261001-175110-603292`, zawiera integrację kodu i przebudowane PBO całego zestawu. SFP, TW_Terytorium, TW_AdminHammer i KulpaNameTags są poza zakresem.
