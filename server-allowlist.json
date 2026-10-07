@@ -3,182 +3,232 @@
   "modId": "Twierdza_Peleryna",
   "enabled": true,
   "allowedPublicIPv4": [
-    "37.28.155.66"
+    "37.28.155.66",
+    "87.205.103.217"
   ],
   "mods": [
     {
       "id": "TwierdzaAdmin",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaAdmin_Server",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaBulletProof",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaLeki_Server",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaQoL",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaQoL_Server",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaRdzen_Server",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaSkills_Leki",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaSkills_Rdzen",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaSkills_Relife",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaUI",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaUI_Medycyna",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "TwierdzaUI_Server",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_MedycynaWRuchu",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Peleryna",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Peleryna_Server",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Skille",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Szperacz",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Szperacz_Server",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Dungeony",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Dungeony_Server",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Krawiectwo",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Krawiectwo_Server",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Things",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     },
     {
       "id": "Twierdza_Things_Server",
       "enabled": true,
       "allowedPublicIPv4": [
-        "37.28.155.66"
+        "37.28.155.66",
+        "87.205.103.217"
+      ]
+    },
+    {
+      "id": "Twierdza_Zombie",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66",
+        "87.205.103.217"
+      ]
+    },
+    {
+      "id": "Twierdza_Zombie_Server",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66",
+        "87.205.103.217"
+      ]
+    },
+    {
+      "id": "Twierdza_Zombie_ActionFix",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66",
+        "87.205.103.217"
       ]
     }
   ]
