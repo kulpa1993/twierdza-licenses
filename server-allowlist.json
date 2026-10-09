@@ -262,6 +262,20 @@
         "37.28.155.66",
         "87.205.103.217"
       ]
+    },
+    {
+      "id": "TW_DeathBox",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "TW_DeathBox_Server",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
     }
   ]
 }
