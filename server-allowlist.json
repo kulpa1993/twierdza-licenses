@@ -322,6 +322,20 @@
         "37.28.155.66",
         "87.205.103.217"
       ]
+    },
+    {
+      "id": "Twierdza_Pszczelarstwo",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Pszczelarstwo_Server",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
     }
   ]
 }
