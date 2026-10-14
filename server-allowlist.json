@@ -336,6 +336,20 @@
       "allowedPublicIPv4": [
         "37.28.155.66"
       ]
+    },
+    {
+      "id": "Twierdza_Wiertarka",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Wiertarka_Server",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
     }
   ]
 }
