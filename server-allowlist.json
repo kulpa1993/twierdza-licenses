@@ -357,6 +357,27 @@
       "allowedPublicIPv4": [
         "37.28.155.66"
       ]
+    },
+    {
+      "id": "Twierdza_Powiadomienia",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Powiadomienia_Server",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Powiadomienia_Medycyna",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
     }
   ]
 }
