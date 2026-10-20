@@ -378,6 +378,55 @@
       "allowedPublicIPv4": [
         "37.28.155.66"
       ]
+    },
+    {
+      "id": "Twierdza_Gospodarstwo",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Gospodarstwo_Mlyn",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Gospodarstwo_Mlyn_Server",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Gospodarstwo_Pasieka_Server",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Gospodarstwo_Server",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Gospodarstwo_Zielnik",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
+    },
+    {
+      "id": "Twierdza_Gospodarstwo_Zielnik_Server",
+      "enabled": true,
+      "allowedPublicIPv4": [
+        "37.28.155.66"
+      ]
     }
   ]
 }
